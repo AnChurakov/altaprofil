@@ -1,0 +1,35 @@
+/* Defaults */
+
+.btn-alta-red {
+    border-radius: 0!important;
+    color: #fff;
+    background-color: #ff4242;
+}
+
+/* Главная */
+.main {
+    min-height: 100vh;
+}
+.main--bg {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url('../img/main_bg.png');
+}
+.main__navbar {
+    background-color: transparent!important;
+}
+.main__navbar .nav-link {
+    color: #fff!important;
+}
+.main__logo {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.main__logo--img {
+    background-image: url('../img/logo.png');
+}

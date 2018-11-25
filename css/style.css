@@ -1,35 +1,71 @@
 /* Defaults */
 
 .btn-alta-red {
-    border-radius: 0!important;
-    color: #fff;
-    background-color: #ff4242;
+  border-radius: 0 !important;
+  color: #fff;
+  background-color: #ff4242;
+}
+.btn-alta-red:hover {
+  background-color: #da1212;
 }
 
 /* Главная */
 .main {
-    min-height: 100vh;
+  min-height: 100vh;
+  padding: 2.5rem 0;
 }
 .main--bg {
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    background-image: url('../img/main_bg.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url("../img/main_bg.png");
 }
 .main__navbar {
-    background-color: transparent!important;
+  background-color: transparent !important;
 }
 .main__navbar .nav-link {
-    color: #fff!important;
+  color: #fff !important;
 }
 .main__logo {
-    width: 300px;
-    height: 150px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 .main__logo--img {
-    background-image: url('../img/logo.png');
+  background-image: url("../img/logo-svg.svg");
+}
+.main__contacts {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.main__content-wrapper {
+  height: 70vh;
+}
+.main__footer {
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main__content-wrapper {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 0) and (max-width: 768px) {
+  .main__navbar {
+    margin-bottom: 3rem;
+  }
+  .d-xs-none {
+    display: none;
+  }
+  .main__content-wrapper {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+  }
+  .main__footer .d-flex {
+    flex-flow: column;
+    text-align: center;
+  }
 }

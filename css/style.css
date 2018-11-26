@@ -57,9 +57,6 @@
   .main__navbar {
     margin-bottom: 3rem;
   }
-  .d-xs-none {
-    display: none;
-  }
   .main__content-wrapper {
     padding: 5rem 0;
     margin-bottom: 5rem;
@@ -67,5 +64,67 @@
   .main__footer .d-flex {
     flex-flow: column;
     text-align: center;
+  }
+}
+
+/* Стили магазина */
+.shop {
+}
+.shop__navbar {
+  background-color: #fff !important;
+}
+.shop__logo {
+  width: 150px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-image: url("../img/logo-shop.svg");
+  display: block;
+}
+.shop__contacts {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+/* Категории */
+.categories {
+  vertical-align: top;
+  padding: 3rem 0;
+}
+.category {
+  display: inline-block;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.category__header a {
+  color: #214998;
+}
+.subcategory a {
+  color: #6c757d;
+}
+@media (min-width: 0) and (max-width: 640px) {
+  .category {
+    display: block;
+  }
+}
+@media (min-width: 640px) and (max-width: 1240px) {
+  .category:nth-child(2n) {
+    margin-right: 0 !important;
+  }
+}
+@media (min-width: 1366px) {
+  .category:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+/* Media */
+
+@media (min-width: 0) and (max-width: 1024px) {
+  .d-xs-none {
+    display: none;
   }
 }

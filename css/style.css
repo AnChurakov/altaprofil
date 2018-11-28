@@ -2,7 +2,7 @@
 
 .btn-alta-red {
   border-radius: 0 !important;
-  color: #fff!important;
+  color: #fff !important;
   background-color: #ff4242;
 }
 .btn-alta-red:hover {
@@ -103,6 +103,13 @@
   padding: 1rem 0;
 }
 
+.yandex-map--dotted {
+  height: 100%;
+  width: 100%;
+  outline: 4px dashed #252525;
+  min-height: 70vh;
+}
+
 /* Категории */
 .categories {
   vertical-align: top;
@@ -145,13 +152,16 @@
     flex-flow: column;
   }
   .flex-xs-col div[class^="col"] {
-    flex: 0 0 100%!important;
-    max-width: 100%!important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
     padding-bottom: 2rem;
     text-align: center;
   }
   .d-xs-center {
     margin-left: auto;
     margin-right: auto;
+  }
+  .p-xs-0 {
+    padding: 0!important;
   }
 }

@@ -1,18 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div id="app">
+      <div class="shop">
+        <header class="shop__header">
+          <div class="container">
+            <nav
+              class="navbar navbar-expand-lg navbar-light bg-light shop__navbar"
+            >
+              <a class="navbar-brand d-block" href="#">
+                <i class="shop__logo shop__logo--colorful"></i>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex justify-content-between w-100">
+                  <div class="col px-0">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Главная</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Dropdown
+                        </a>
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Оплата и доставка</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 px-0 d-xs-none">
+                    <div class="shop__contacts">8 (3412) 47-09-90</div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <nav aria-label="breadcrumb">
+            <div class="breadcrumb">
+              <div class="container">
+                <span class="breadcrumb-item"><a href="#">Home</a></span>
+                <span class="breadcrumb-item active">Library</span>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="shop__content">
+          <div class="container">
+            <div class="py-4">
+              <div
+                class="d-flex justify-content-between align-items-center d-xs-none"
+              >
+                <div class="col pl-0">
+                  <div class="d-flex align-items-center">
+                    <div class="shop__icon shop__icon--order"></div>
+                    <div class="ml-3">
+                      <div class="text-alta-blue">Прием заказов</div>
+                      <div class="text-secondary">с 9:00 до 19:00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex align-items-center">
+                    <div class="shop__icon shop__icon--delivery"></div>
+                    <div class="ml-3">
+                      <div class="text-alta-blue">Доставка</div>
+                      <div class="text-secondary">До указанного места</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col pr-0">
+                  <div class="d-flex align-items-center">
+                    <div class="shop__icon shop__icon--consult"></div>
+                    <div class="ml-3">
+                      <div class="text-alta-blue">Консультация</div>
+                      <div class="text-secondary">
+                        Наш менеджер поможет вам в выборе и ответит на вопросы
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product my-5">
+                <h1 class="h1 text-alta-blue font-weight-normal mb-5">
+                  Альта сайдинг бежевый
+                </h1>
+                <div class="d-flex mb-4 flex-xs-col">
+                  <div class="col-lg-4 pl-0 mr-4">
+                    <div class="product__slider">
+                      <div class="product__current-slide mb-3">
+                        <div class="tile-img tile-img--current"></div>
+                      </div>
+                      <div class="product__slides">
+                        <div class="d-flex justify-content-between">
+                          <div class="tile-img tile-img--slide"></div>
+                          <div class="tile-img tile-img--slide"></div>
+                          <div class="tile-img tile-img--slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="product__specs">
+                      <h4 class="h4">Характеристики</h4>
+                      <div class="d-flex justify-content-between">
+                        <div class="product__spec-names">
+                          <div class="product__spec-name">Длина</div>
+                          <div class="product__spec-name">Ширина</div>
+                          <div class="product__spec-name">
+                            Количество в упаковке
+                          </div>
+                        </div>
+                        <div class="product__spec-values">
+                          <div class="product__spec-values">text</div>
+                          <div class="product__spec-values">text</div>
+                          <div class="product__spec-values">text</div>
+                        </div>
+                      </div>
+                      <div class="product__price my-4">
+                        Цена: <b>228 руб.</b>
+                      </div>
+                      <div class="my-4">
+                        <a href="#" class="link-alta-red">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between flex-xs-col">
+                  <div class="col pl-0">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          id="home-tab"
+                          data-toggle="tab"
+                          href="#home"
+                          role="tab"
+                          aria-controls="home"
+                          aria-selected="true"
+                          >Описание товара</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          id="profile-tab"
+                          data-toggle="tab"
+                          href="#profile"
+                          role="tab"
+                          aria-controls="profile"
+                          aria-selected="false"
+                          >Оплата</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          id="contact-tab"
+                          data-toggle="tab"
+                          href="#contact"
+                          role="tab"
+                          aria-controls="contact"
+                          aria-selected="false"
+                          >Доставка</a
+                        >
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div
+                        class="tab-pane fade py-3 show active"
+                        id="home"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                      >
+                        ДИФФУЗИОННЫЙ ТОК, электродный ток в условиях, когда
+                        скорость электрохим. р-ции
+                      </div>
+                      <div
+                        class="tab-pane fade py-3"
+                        id="profile"
+                        role="tabpanel"
+                        aria-labelledby="profile-tab"
+                      >
+                        ДИФФУЗИОННЫЙ ТОК, электродный ток в условиях, когда
+                        скорость электрохим. р-ции
+                      </div>
+                      <div
+                        class="tab-pane fade py-3"
+                        id="contact"
+                        role="tabpanel"
+                        aria-labelledby="contact-tab"
+                      >
+                        ДИФФУЗИОННЫЙ ТОК, электродный ток в условиях, когда
+                        скорость электрохим. р-ции
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col px-0">
+                    <div class="bg-light p-4">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-4"
+                      >
+                        <h4 class="h4">Оформление заказа</h4>
+                        <div class="text-secondary font-weight-bold">
+                          8 (3412) 47-09-90
+                        </div>
+                      </div>
+                      <form action="#" method="post">
+                        <div class="row">
+                          <div class="col">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Ваше имя"
+                            />
+                          </div>
+                          <div class="col">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Ваш телефон"
+                            />
+                          </div>
+                        </div>
+                        <div class="my-3">
+                          После отправки заявки, с вами свяжется наш менеджер
+                          для уточнения деталей заказа
+                        </div>
+                        <button type="button" class="btn btn-alta-red">
+                          Заказать
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shop__similar-products mb-5">
+                <h4 class="h4">Похожие товары</h4>
+                <div class="d-flex justify-content-between align-items-center flex-xs-col">
+                  <div class="similar-product col-lg-3 pl-0">
+                    <div class="similar-product__image mb-3">
+                      <img src="img/tiles.jpg" alt="###" class="w-100" />
+                    </div>
+                    <div class="similar-product__desc">
+                      <div class="similar-product__name">
+                        <a href="#" class="text-secondary font-weight-bold"
+                          >Виниловый сайдинг бежевый</a
+                        >
+                      </div>
+                      <div class="similar-product__price">
+                        Цена <b>190руб</b> шт
+                      </div>
+                    </div>
+                  </div>
+                  <div class="similar-product col-lg-3">
+                    <div class="similar-product__image mb-3">
+                      <img src="img/tiles.jpg" alt="###" class="w-100" />
+                    </div>
+                    <div class="similar-product__desc">
+                      <div class="similar-product__name">
+                        <a href="#" class="text-secondary font-weight-bold"
+                          >Виниловый сайдинг бежевый</a
+                        >
+                      </div>
+                      <div class="similar-product__price">
+                        Цена <b>190руб</b> шт
+                      </div>
+                    </div>
+                  </div>
+                  <div class="similar-product col-lg-3">
+                    <div class="similar-product__image mb-3">
+                      <img src="img/tiles.jpg" alt="###" class="w-100" />
+                    </div>
+                    <div class="similar-product__desc">
+                      <div class="similar-product__name">
+                        <a href="#" class="text-secondary font-weight-bold"
+                          >Виниловый сайдинг бежевый</a
+                        >
+                      </div>
+                      <div class="similar-product__price">
+                        Цена <b>190руб</b> шт
+                      </div>
+                    </div>
+                  </div>
+                  <div class="similar-product col-lg-3 pr-0">
+                    <div class="similar-product__image mb-3">
+                      <img src="img/tiles.jpg" alt="###" class="w-100" />
+                    </div>
+                    <div class="similar-product__desc">
+                      <div class="similar-product__name">
+                        <a href="#" class="text-secondary font-weight-bold"
+                          >Виниловый сайдинг бежевый</a
+                        >
+                      </div>
+                      <div class="similar-product__price">
+                        Цена <b>190руб</b> шт
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="shop__footer">
+          <div class="shop__info">
+            <div class="container">
+              <div class="d-flex justify-content-between flex-xs-col">
+                <div class="col-2 pl-0">
+                  <div class="shop__logo shop__logo--white d-xs-center"></div>
+                  Надежное качество по доступной цене
+                </div>
+                <div class="col-2">
+                  <ul class="list-unstyled">
+                    <li>Телефон</li>
+                    <li>8 (3412) 47-09-90</li>
+                    <li>8 (3412) 47-09-90</li>
+                    <li>8 (3412) 47-09-90</li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul class="list-unstyled">
+                    <li>Адрес</li>
+                    <li>г. Ижевск, улица Пойма 17,</li>
+                    <li>Строительная ярмарка 2 ряд 15 место</li>
+                  </ul>
+                </div>
+                <div class="col-3 pr-0">
+                  <ul class="list-unstyled">
+                    <li>Режим работы</li>
+                    <li>Понедельник-Воскресенье</li>
+                    <li>с 9:00 до 19:00</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop__rights">
+            <div class="text-center text-secondary">
+              Все права защищены. 2018 год
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>

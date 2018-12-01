@@ -8,6 +8,14 @@
 .btn-alta-red:hover {
   background-color: #da1212;
 }
+.btn-alta-blue {
+  border-radius: 0 !important;
+  color: #fff !important;
+  background-color: #0071bb;
+}
+.btn-alta-blue:hover {
+  background-color: #014cbe;
+}
 .text-alta-blue {
   color: #0071bb;
 }
@@ -98,6 +106,13 @@
 .shop__navbar {
   background-color: #fff !important;
 }
+.shop__navbar--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
 .shop__logo {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -108,6 +123,11 @@
   width: 150px;
   height: 75px;
   background-image: url("../img/logo-shop.svg");
+  transition: all ease-in-out 0.3s;
+}
+.shop__navbar--fixed .shop__logo--colorful {
+  width: 120px;
+  height: 55px;
 }
 .shop__logo--white {
   width: 165px;
@@ -159,11 +179,18 @@
 
 /* Товар */
 
+.products .product {
+  display: inline-block;
+  margin-right: 3rem;
+}
 .product__specs {
   font-size: 1.25rem;
 }
+.product__desc {
+  font-size: 1.25rem;
+}
 .product__price {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .similar-product__name a {
@@ -172,6 +199,29 @@
 .similar-product__price {
   font-size: 1.4rem;
 }
+@media (min-width: 0) and (max-width: 640px) {
+  .products .product {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 640px) and (max-width: 1240px) {
+  .products .product {
+    display: block;
+    width: 40%;
+  }
+  .products .product:nth-child(2n) {
+    margin-right: 0 !important;
+  }
+}
+@media (min-width: 1366px) {
+  .products .product {
+    width: 25%;
+  }
+  .products .product:nth-child(3n) {
+    margin-right: 0;
+  }
+}
 
 /* Категории */
 .categories {
@@ -179,6 +229,7 @@
 }
 .category {
   display: inline-block;
+  vertical-align: text-top;
   margin-right: 3rem;
   margin-bottom: 3rem;
 }
@@ -192,14 +243,22 @@
 @media (min-width: 0) and (max-width: 640px) {
   .category {
     display: block;
+    width: 100%;
   }
 }
 @media (min-width: 640px) and (max-width: 1240px) {
+  .category {
+    display: block;
+    width: 100%;
+  }
   .category:nth-child(2n) {
     margin-right: 0 !important;
   }
 }
 @media (min-width: 1366px) {
+  .category {
+    width: 33%;
+  }
   .category:nth-child(3n) {
     margin-right: 0;
   }
@@ -224,7 +283,19 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .d-xs-block {
+    display: block;
+  }
+  .d-xs-flex {
+    display: flex;
+  }
   .p-xs-0 {
     padding: 0 !important;
+  }
+  .m-xs-0 {
+    margin: 0 !important;
+  }
+  .w-xs-100 {
+    width: 100% !important;
   }
 }

@@ -39,14 +39,4 @@ $(document).ready(function() {
         });
     });
 
-    $(window).trigger('scroll');
-    $(window).bind('scroll', function() {
-        var pixels = $('.shop__navbar').height();
-        var menu = $('.shop__navbar');
-        if ($(window).scrollTop() >= pixels) {
-            menu.addClass('shop__navbar--fixed');
-        } else {
-            menu.removeClass('shop__navbar--fixed');
-        }
-   });
 });

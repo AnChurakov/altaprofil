@@ -42,6 +42,9 @@
   text-decoration: none;
   border-bottom-style: solid;
 }
+.font-size-0 {
+  font-size: 0;
+}
 
 /* Главная */
 .main {
@@ -102,11 +105,10 @@
 
 /* Стили магазина */
 .shop {
+	padding-top: 101px;
 }
 .shop__navbar {
   background-color: #fff !important;
-}
-.shop__navbar--fixed {
   position: fixed;
   top: 0;
   left: 0;
